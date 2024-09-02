@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+
+    <link rel="stylesheet" href="home.css">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">    
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="homepage">
+          <header>
+        <div class="header-left">
+            <div class="logo">
+                <img src="logo1.png">
+            </div>
+            <div class="website-name"><span style="white-space: nowrap;">NOTES COMM</span>
+            </div>
+        </div>
+
+        <div class="header-right">     
+            <div class="login">
+                <img src="login.png" alt="Login" id="loginBtn" onclick="openModal()">
+
+                <!-- Login Modal -->
+                <div id="loginModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <h2>Login</h2>
+                        <div class="login-container">
+                            
+                            <form action="#" method="post">
+                                <div class="input-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" id="password" name="password" required>
+                                </div>
+                                <div class="oauth-buttons">
+                                    <button id="google-login">Login with Google</button>
+                                    <button id="github-login">Login with GitHub</button>
+                                </div>
+                                <div class="button-group">
+                                    <button type="submit" class="btn">Login</button>
+                                    <button id="signupBtn" class="btn-signup" onclick="openSignupModal()">Sign Up</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="signupModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeSignupModal()">&times;</span>
+                        <h2>Sign Up</h2>
+                        <div class="signup-container">
+                            <!-- Sign Up Form -->
+                            <form action="#" method="post">
+                                <div class="input-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="mobileNo">Mobile Number</label>
+                                    <input type="tel" id="mobileNo" name="mobileNo" required>
+                                </div>
+                                <button type="submit" class="btn">Sign Up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <script src="home.js"></script>
+            </div>
+        </div>
+    </header>
+
+    <header>
+        <nav role='navigation'>
+          <ul>
+                    <li><a href="notes.html">G.O.A.T Notes</a></li>
+                    <li class="dropdown">
+                        <a href="#">Services &#9662;</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">My Profile</a></li>
+                            <li><a href="#">Opportunities</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#community">Community</a></li>
+                    <li id="book-trigger" class="book-trigger"><span class="fa fa-book"></span></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <div class="bored">
+                    <li><a href="bored.html">Bored?</a></li>
+                </div>
+
+          </ul>
+        </nav>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      </header>
+    
+
+      
+    <!-- Your content goes here -->
+    <script src="home.js"></script>
+
+    <section class="description">
+    <!-- home -->
+    <div class="image-container">
+        <!-- Description box -->
+            <div class="description">
+                    <div class="desc-content">
+                        <h2>YOU GOT EXAMS?</h2><br> <h3>WE  GOT  NOTES!</h3><br>
+                        <p>Ready to ace your exams without breaking the bank? Welcome to Notes Book - the ultimate treasure trove of knowledge where textbooks fear to tread! Get ready to ditch the snooze-fest of expensive books and dive into our stash of hand-written and official university notes for B.Tech, BBA, and BCA courses. It's like having a cheat code for success, but totally legit! Don't miss out - join the fun and conquer your studies with a smile!"</p>
+                        <div class="desc-button-container">
+                            <a href="notes.html">
+                                
+                                  
+                            </a>
+                        </div>
+                    </div>
+                    <div class="desc-image">
+                        <img src="w.png" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+    </div>
+</section>
+</div>
+
+<div class="insight">
+    <h1 class="description3">Insights and Blogs</h1>
+    <div class="insights-box">
+    
+        <div class="insights-section">
+            
+    <div class="blog-container">
+        <div class="blog-post">
+            <h2>Elevate Your Studies: Access Quality Notes on Notes Comm</h2>
+            <img class="blog-image" src="blog1.jpg" alt="Blog 1 Image">
+                    <p>Are you looking to elevate your studies and access high-quality notes online?</p>
+                    <a href="blog1.html">
+                        <div class="px-72 py-28">
+                            <button class="group relative m-1 cursor-pointer overflow-hidden rounded-md border-2 border-yellow-500 px-5 py-3 font-mono font-semibold">
+                              <span class="ease absolute top-1/2 h-0 w-64 origin-center -translate-x-20 rotate-45 bg-yellow-500 transition-all duration-300 group-hover:h-64 group-hover:-translate-y-32"></span>
+                              <span class="ease relative text-yellow-500 transition duration-300 group-hover:text-white">Read More</span>
+                            </button>
+                          </div>
+                        </a>
+        </div>
+        <div class="blog-post">
+            <h2>Are you a student looking for a platform to share your knowledge and access educational resources?</h2>
+            <img class="blog-image" src="blog2.jpg" alt="Blog 2 Image">
+           
+            <p>Are you a student looking to unlock your potential ?</p>
+            <a href="blog2.html">
+                <div class="px-72 py-28">
+                    <button class="group relative m-1 cursor-pointer overflow-hidden rounded-md border-2 border-yellow-500 px-5 py-3 font-mono font-semibold">
+                      <span class="ease absolute top-1/2 h-0 w-64 origin-center -translate-x-20 rotate-45 bg-yellow-500 transition-all duration-300 group-hover:h-64 group-hover:-translate-y-32"></span>
+                      <span class="ease relative text-yellow-500 transition duration-300 group-hover:text-white">Read More</span>
+                    </button>
+                  </div>
+                </a>
+        </div>
+        <div class="blog-post">
+            <h2>Deciphering the Perfect Entry Point: Your Path to Coding Mastery</h2>
+    
+            <img class="blog-image" src="blog3.jpeg" alt="Blog 2 Image">
+           
+            <p>Embarking on the journey of coding mastery is an adventure filled with promise in the realm of technology.</p>
+    
+            <a href="blog3.html">
+            <div class="px-72 py-28">
+                <button class="group relative m-1 cursor-pointer overflow-hidden rounded-md border-2 border-yellow-500 px-5 py-3 font-mono font-semibold">
+                  <span class="ease absolute top-1/2 h-0 w-64 origin-center -translate-x-20 rotate-45 bg-yellow-500 transition-all duration-300 group-hover:h-64 group-hover:-translate-y-32"></span>
+                  <span class="ease relative text-yellow-500 transition duration-300 group-hover:text-white">Read More</span>
+                </button>
+              </div>
+            </a>
+        </div>
+        <!-- Add more blog posts here -->
+    
+        <div class="dots"></div>
+         <script src="home.js"></script>
+    </div>
+    </div>
+        </div>
+    </div>
+
+<section id="community" class="community">
+    <div class="image-container">
+        <!-- Description box -->
+        <div class="description1">
+            <div class="comm-content">
+                <h2>Community</h2><br>
+                <p>"Welcome to Noteverse, the vibrant hub where sharing meets learning, and perks flow abundantly! Dive into our dynamic community where students reign as heroes, illuminating paths with their shared notes. Need answers? Explore our lively discussion forums, where doubts dissolve under expert guidance. But wait, there's more! Uncover internship opportunities in our insightful weekly blogs. The more you share, the more you reap—earn the prestigious 'Community Topper' badge and stand a chance to be featured as 'Student of the Month' on our homepage. Join Noteverse today and let your brilliance shine!"</p><br>
+                <p>Support: Never study alone again. Our community has your back, cheering you on through every lecture.</p><br>
+                <p>Collaborative Learning: Share notes, gain insights, and reinforce your own knowledge. It's like having a virtual study group with real brain gains!
+                </p><br>
+                <div class="comm-button-container">
+                        <a href="comm.html">
+                            <button class="btn">Note Verse
+                                <i class="fa-sharp fa-solid fa-chevron-right"></i>
+                            </button>
+                        </a>
+                </div>
+            </div>
+            <div class="comm-image">
+                <img src="comm1.png" alt="Image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about-us" class="about-us">
+        <div class="image-container">
+        <!-- Description box -->
+        <div class="description2">
+            <div class="comm-content">
+                <h2>About Us</h2><br>
+                <p>Born from the shared ambition of three friends, Notes Comm stands as a beacon of innovative problem-solving. Grounded in the belief that experience is the cornerstone of success, we embarked on this journey to provide unparalleled solutions to common dilemmas.<br> With gratitude to the divine, we humbly acknowledge the guidance that led us here. Our platform reflects our dedication to excellence, empowering students to thrive in their academic pursuits. Through collaborative effort and unwavering commitment, we strive to create a supportive environment where knowledge flourishes and barriers dissolve. Join us on this transformative journey as we redefine the landscape of education, one note at a time.</p>
+            </div>
+            <div id="ab" class="comm-image">
+                <img src="ab.png" alt="Image">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<div id="contact"class="foot">
+<footer>
+    <div class="footer-left">
+      <h2>Notes Comm</h2><br><br>
+      <p>Sit, Chill, Relax <br> We've Got You Covered</p>
+    </div>
+    <div class="footer-center">
+      <ul class="footer-list">
+        <h3>Services</h3><br>
+        <li><a href="notes.html">G.O.A.T Notes</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#about-us">About Us</a></li>
+      </ul>
+      <ul class="footer-list">
+        <h3>Other Services</h3><br>
+        <li><a href="feed.html">Feedback</a></li>
+        <li><a href="terms.html">Terms And Conditions</a></li>
+      </ul>
+      <ul class="footer-list">
+        <h3>Contact Us</h3><br>
+        <li>Email: your@example.com</li>
+      </ul>
+    </div>
+  </footer>
+  <footer>
+    <div class="footer-center2">
+        <ul>
+            <li><p><strong>Disclaimer:</strong> All the books and study resources hosted on Notes Comm are provided for informational and educational purposes only. We do not claim ownership of any book/typed resources available on the website.</p><br>
+            </li>
+            <li><a href="pri.html" class="privacy-policy">Privacy Policy<br></a>
+            </li>
+        </ul>    
+    </div>
+    <div class="footer-right">
+        <ul class="social-icons">
+            <li><a href="#"><i class="fab fa-github icon"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram icon"></i></a></li> 
+        </ul>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
