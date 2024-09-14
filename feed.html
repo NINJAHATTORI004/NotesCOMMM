@@ -60,7 +60,11 @@
             <img src="logo1.png" alt="Company Logo" class="logo">
      
         <h1>Feedback Form</h1>
-        <form action="submit_feedback.php" method="post" onsubmit="displayModal()">
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+          <!-- Replace with your Access Key -->
+          <input type="hidden" name="access_key" value="681d551c-62a3-47cb-a5d9-e44ebb6a9133">
+      
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br><br>
             <label for="email">Email:</label>
